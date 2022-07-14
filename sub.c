@@ -16,7 +16,7 @@ void f_sub(stack_t **head, unsigned int counter)
 		swp = swp->next;
 	if (nodes < 2)
 	{
-		frprintf(stderr, "L%d: can't sub, stack too shorrt\n", counter);
+		fprintf(stderr, "L%d: can't sub, stack too shorrt\n", counter);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
